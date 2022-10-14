@@ -10,8 +10,8 @@ FirebaseAuthProvider firebaseAuthProvider = new FirebaseAuthProvider(new Firebas
 
 FirebaseAuthLink firebaseAuthLink = await firebaseAuthProvider.SignInWithEmailAndPasswordAsync("deneme@deneme.com", "deneme123");
 
-
 Console.WriteLine(firebaseAuthLink);
+
 
 Console.WriteLine(firebaseAuthLink.FirebaseToken);
 
