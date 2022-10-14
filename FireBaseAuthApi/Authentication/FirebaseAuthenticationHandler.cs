@@ -17,7 +17,6 @@ public class FirebaseAuthenticationHandler : AuthenticationHandler<Authenticatio
         _firebaseApp = firebaseApp;
     }
     
-
     protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
     {
         if (!Context.Request.Headers.ContainsKey("Authorization"))
